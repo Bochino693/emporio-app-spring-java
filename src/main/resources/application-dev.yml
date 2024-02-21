@@ -1,0 +1,18 @@
+jwt:
+  expiration: 3600000
+  secret: MYJWTSECRET
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:postgresql://localhost:5431/springboot_pwr
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
